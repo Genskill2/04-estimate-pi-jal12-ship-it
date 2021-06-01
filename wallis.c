@@ -29,7 +29,7 @@ float wallis_pi(int n)
   float = pro;
   if(n == 0)
     return 1;
-  pro = (4 * pow(n, 2))/((4 * pow(n, 2)) - 1;
+  pro = (4 * pow(n, 2))/((4 * pow(n, 2)) - 1);
   return pro* wallis_pi(n-1); 
  }   
                          
