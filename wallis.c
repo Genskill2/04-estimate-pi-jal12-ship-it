@@ -24,12 +24,12 @@ int main(void) {
   }
 }
 
-float wallis_pi(int n)
-{
-  float pro;
-  if(n == 0)
-    return 1;
-  pro = (4 * pow(n, 2))/((4 * pow(n, 2)) - 1);
-  return pro* wallis_pi(n-1); 
+float wallis_pi(int n) {
+  float res=1;
+  for (int i=1; i<=n; i++) {
+    res *= 4* pow(i, 2)/ (4* pow(i, 2) - 1);
+  }
+  return res* 2;
+  
  }   
                          
